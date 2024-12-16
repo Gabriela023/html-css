@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhano com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--href= hiperlink de referência
+        taget _blank = abre página em branco (nova aba)
+        rel external = relação com link externo
+        [IDEAL PARA QUANDO O LINK LEVAR A UM LUGAR QUE SEJA FORA DO SEU SITE]-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página.</a></p>
+    <!--Ctrl+espaço = mostra as opções de páginas disponíveis no site para criar o link
+    rel next = definiu que o link leva até a próxima página
+    -O link só não precisará da URL se ele for de uma página dentro da pasta do site-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!--É preciso informar o diretório no caso de a página não estar na mesma pasta.-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/08 - Formatação de Textos.pdf" download="Formatação de Textos.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/08 - Formatação de Textos.rar" download="Formatação de Textos.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

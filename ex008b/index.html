@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / pré-formatado</h2><!--as fonte desse documento não são monoespaçadas então é necessário mudar par outra-->
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre><!--Esse comando faz com que se respeite a identação dentro do bloco <code> pois tudo o que está escrito já foi pré-formatado. Se pular linha, por exemplo, também será pulado no site.-->
+        <code>
+numero = float(input('Digite um número para saber se é par ou impar:'))
+resto = numero % 2
+if resto == 0:
+    print('Número é par')
+else:
+    print('Número é impar')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo JEff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.udemy.com/join/passwordless-auth/?next=%2Fcourse%2Fredes-modulo-1%2Flearn%2Flecture%2F18674370#overview"><!--Cite é o endereço externo de onde o usuário pode encontrar a citação-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic consequatur deleniti vero, quam necessitatibus adipisci animi atque explicabo ducimus minima non mollitia praesentium, consequuntur ipsa, nam voluptatem dicta iusto provident!
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    
+</body>
+</html>

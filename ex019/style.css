@@ -1,0 +1,35 @@
+@charset "UTF-8";
+        /* em HTML é id = em CSS é # ==> ÚNICO ELEMENTO
+        em HTML é class = em CSS é . ==> MÚLTIPLOS ELEMENTOS
+        CLASS: Nomear de acordo com a função e não a forma. */
+
+body{
+    background-color: #B1DDF1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #614344;
+    /*É importante respeitar a ordem de hierarquia pois os outros elementos vão herdar as configurações do elemento genérico.*/
+}
+h1#principal{
+    /*para usar o identificador é opcional o h1. Poderia ser apenas [#principal]
+    Não se usa o mesmo id para outros elementos no mesmo documento.
+    */
+    text-align: center;
+    color: #332C23;
+}
+h2{
+    color: #88527F;
+}
+.basico{
+    color: #29524A;
+}
+.intermediario{
+    color: #F1C40F;
+}
+.avancado{
+    color: #FF0022;
+}
+.destaque{
+    background-color: #11ff00;
+}

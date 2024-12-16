@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários sispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <!--o source media deve sempre ser adicionado acima dos outros e como começamos da imagem maior deve mudar de min para max-->
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png"><!--Ao definir a largura máxima como 1050 e não apenas como 1000px é levado em conta a largura da barra de rolagem que possui aproximadamente 50px-->
+        <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="auto" autoplay controls loop><!--Loop => Deixa o som rolando de fundo no site durante a navegação-->
+        <!--Apagar o parâmetro src e abrir um bloco-->
+        <!--A ordem dos arquivos define a ordem de tentativa de carregamento do navegador. É importante deixar o audio em vários formatos pois nem todos os navegadores aceitam qualquer formato-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg"><!--Consultar quais são os tipos compatíveis-->
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav"><!--Não é recomendado usar pois são arquivos grandes e pesados-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+
+
+</body>
+</html>

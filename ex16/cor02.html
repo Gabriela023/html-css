@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /*ESSA É UMA CONFIGURAÇÃO GLOBAL DAS CSS*/
+            height:100%;
+        }
+        body{
+            /*a direção do gradiente pode ser indicada por direção padrão [to right] ou por grau [90deg]
+            
+            As direções podem ser: to right, to left, to top E to bottom*/
+            background-image:linear-gradient(to bottom,#FF8181,#FFACAC 20%,#FFD6D6);
+            /*Após a cor é possível definir a porcentagem que ela vai ocupar na tela.*/
+            background-attachment: fixed; /*Vai ficar um fundo fixo mesmo que tenha conteúdo depois*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
