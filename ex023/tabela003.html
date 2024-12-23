@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--Expandiu a coluna B para ocupar o espaço de duas colunas.-->
+
+            <!--tirei a célula C e ficou um buraco no lugar dela.-->
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td><!--A célula F foi expandida para ocupar o lugar de 3 linhas, a G e a J-->
+        </tr>
+        <tr>
+            <!--A célula G foi removida-->
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <!--A célula J foi removida-->
+            <td>K</td>
+            <td>L</td>
+            <!--As células G e J foram removidas mas ao invés de formar um furo, as outras se moveram para ficar nos seus lugares-->
+
+            <!--OBS: Se o D que cescesse no lugar do F, as células H I K L permaneceriam no mesmo lugar, como se o G e o J ainda estivesse lá.-->
+        </tr>
+    </table>
+</body>
+</html>
