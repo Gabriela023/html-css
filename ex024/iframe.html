@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            /*As configurações das CSS sobressaem em relação às configurações de estilo inline*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do 
+        
+        <!--Tamanho oadrão 300x150-->
+        <iframe src="https://www.wikipedia.com" frameborder="1" height="500" scrolling="no"></iframe>
+        <!--FRAMEBORDER => Aceita 0 pi putro número, é possível configurar na CSS também.-->
+        <!--SCROLLING => Rolagem
+            auto = se o conteúdo for grande e precisar da barra de rolagem, ela vai aparecer.
+            yes = mesmo que o conteúdo não seja grande, a barra de rolagem aparece.
+            no = a barra de rolagem nunca vai aparecer, mesmo se tiver mais conteúdo.
+             -->
+        <!--height = altura de 500px-->
+            <a href="https://www.wikipedia.com" target="_blank">Curso em Vídeo</a>
+            <!--No exemplo do Guanabara não aparece o texto com o link, somente o iframe. Mas no meu navegador apareceu os dois :(-->
+        para aprender a programar.
+    </p>
+    <p>
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+        <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a>
+
+        também é bem legal!
+    </p>
+</body>
+</html>
