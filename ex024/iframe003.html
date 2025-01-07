@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus fugit maxime, dolorum, minus temporibus dicta debitis natus doloribus reprehenderit reiciendis pariatur dignissimos at. Iste dignissimos quos ducimus consectetur fugiat ipsum!</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <!--
+    NAME: Todo iframe precisa de um name para ser usado no target do link quando ele for aparecer na mesma página.
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit porro architecto illo suscipit culpa saepe facere rerum! Cupiditate nisi fugiat recusandae eos sapiente corporis mollitia accusantium nostrum, consequuntur quisquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam corrupti quia cum mollitia et ad nemo harum sit quasi, ipsa tempore accusamus nulla quas, minima autem hic ipsum eligendi eaque!
+    </p>
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opões acima</h1> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eius voluptates facere hic esse, necessitatibus laboriosam! In laborum laboriosam exercitationem temporibus voluptates veniam esse nemo delectus. Sunt consectetur deserunt eligendi!</p><img src='gato.png'>">
+    <!--SRCDOC => Cria um código html para aparecer no iframe enquanto nenhum link é clicado.-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quos fugiat enim magnam numquam? Accusantium a molestiae similique sunt aliquam enim animi nesciunt doloremque harum pariatur voluptas, distinctio earum. Reiciendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam maiores corporis, laboriosam totam ex at vel deleniti commodi nostrum, accusamus, officiis repellat cumque ea impedit ipsam ducimus voluptas exercitationem quis.</p>
+</body>
+</html>
