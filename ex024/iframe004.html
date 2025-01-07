@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias enim consectetur fugiat id ullam quae quaerat nulla voluptates. Pariatur blanditiis voluptate distinctio quas nam? Quod vitae quaerat eos illo sint.</p>
+
+    <iframe src="pag004.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+        <!--SANDBOX="sandbox" => Impede a captura de informações por um site externo (iframe)
+            O sandbox permite adicionar permissões específicas, como:
+            -> allow-same-origin - O conteúdo do iframe acessar recursos do domínio pai (como cookies e localStorage).
+            -> allow-top-navigation - O iframe navegar para a página principal (toda a aba do navegador).
+            -> allow-forms - Enviar formulários do iframe para outros sites.
+            -> allow-popups - Abrir novas janelas ou abas a partir do iframe.
+            -> allow-scripts - Executar scripts JavaScript dentro do iframe.
+            -> allow-pointer-lock - Usar o mouse de forma mais precisa dentro do iframe (útil para jogos).
+        -->
+        <!--REFERRERPOLICY => O conteúdo que está dentro do iframe não vai coletar nenhuma informação do usuário -->
+        Seu navegador não é compatível com isso...
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima, delectus amet voluptates obcaecati quis? Maxime ad rem pariatur beatae neque nostrum fuga incidunt impedit non, eius recusandae, nobis harum.</p>
+</body>
+</html>
