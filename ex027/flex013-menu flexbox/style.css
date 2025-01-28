@@ -12,15 +12,38 @@ body{
 }
 header{
     background-color:#E9FF70 ;
-    color: #FF70A6; 
+    color: #340068; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1{
-    text-shadow: 1px 1px 0px rgba(40, 2, 52, 0.303);
-    border: 1px dotted black;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.408); 
+    flex: 0 0 200px;
 }
 header > nav {
-    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+header > nav > a{
+    background-color: #FF70A6;
+    color: #E9FF70; 
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+header > nav > a:hover{
+    background-color: #340068;
+    color: #FF9770;
+    transition: background-color .3s;
 }
 main{
     background-color: white;
@@ -28,4 +51,8 @@ main{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+}
+main > h2 {
+    color: #FF9770;
+    text-shadow: 2px 2px 3px rgba(84, 0, 0, 0.099);;
 }
